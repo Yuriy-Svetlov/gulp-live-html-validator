@@ -1,0 +1,25 @@
+{
+  "name": "gulp-live-html-validator",
+  "version": "1.0.0",
+  "description": "This module is for the browser plugin «Live HTML Validator» — this is the browser plugin that performs real-time HTML validation of the browser page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "live",
+    "html",
+    "validator"
+  ],
+  "author": "Yuriy Svetlov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yuriy-Svetlov/gulp-live-html-validator"
+  },
+  "homepage": "https://live-html-validator.com",
+  "bugs": "https://github.com/Yuriy-Svetlov/live-html-validator/issues",
+  "dependencies": {
+    "live-html-validator": "^1.0.0"
+  }
+}

@@ -33,7 +33,42 @@ npm i gulp-live-html-validator --save-dev
 [Example of how to establish a connection to the plugin «**Live HTML Validator**»](https://github.com/Yuriy-Svetlov/live-html-validator/tree/main/documentation/examples/%D1%81onnect_to_server)
 
 ```javascript
+const 
+  gulp = require('gulp'),
+  htmlValidator = require("gulp-live-html-validator"),
+  plumber = require('gulp-plumber'),
+  htmlmin = require('gulp-htmlmin');
 
+const 
+  htmlValidatorMain = new htmlValidator({
+    host: '127.0.0.1', 
+    port: '8080'
+  });
+
+const 
+  htmlWatch = 'src/**/*.html',
+  htmlSrc = ['src/**/*.html'],
+  htmlDest = './dest/';
+
+
+function html() {
+  return gulp.src(htmlSrc)    
+  .pipe(plumber())
+  .pipe(htmlmin())
+  .pipe(htmlValidatorMain.check())
+  .pipe(gulp.dest(htmlDest))
+}
+
+
+function watch(){
+  htmlValidatorMain.run();
+
+  gulp.watch(htmlWatch, gulp.series(html));
+}
+
+
+exports.html = html;
+exports.watch = watch;
 ```
 
 ##  Examples:

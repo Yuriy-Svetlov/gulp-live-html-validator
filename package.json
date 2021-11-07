@@ -1,6 +1,6 @@
 {
   "name": "gulp-live-html-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module is for the browser plugin «Live HTML Validator» — this is the browser plugin that performs real-time HTML validation of the browser page",
   "main": "index.js",
   "scripts": {

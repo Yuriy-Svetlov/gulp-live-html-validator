@@ -1,6 +1,6 @@
 # Example - 2 (Gulp) (gulp-live-html-validator)
 
-**1.** Download or copy [example-1](https://github.com/Yuriy-Svetlov/gulp-live-html-validator/tree/main/documentation/examples/2)
+**1.** Download or copy [example-2](https://github.com/Yuriy-Svetlov/gulp-live-html-validator/tree/main/documentation/examples/2)
 
 **2.** Go to the directory with `gulpfile.js`.
 

@@ -25,7 +25,7 @@ class Server{
 	}
 
 
-	check(options = {}){
+	check(){
 		let transformStream = new Transform({objectMode: true});
 		let lastFile = null;
 

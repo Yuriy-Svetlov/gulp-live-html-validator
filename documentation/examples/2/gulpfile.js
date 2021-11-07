@@ -18,7 +18,7 @@ const
   htmlDest = './dest/';
 
 
-function html() {
+gulp.task('html', function () {
   return gulp.src(htmlSrc)    
   .pipe(plumber())
   .pipe(htmlmin({
@@ -37,17 +37,15 @@ function html() {
   }))
   .pipe(htmlValidatorMain.check())
   .pipe(gulp.dest(htmlDest))
-}
+});
 
 
-function watch(){
+gulp.task('watch', function () {
   webServer();
   htmlValidatorMain.run();
 
-  gulp.watch(htmlWatch, gulp.series(html));
-}
+  gulp.watch(htmlWatch, gulp.series('html'));
+});
 
 
-exports.html = html;
-exports.watch = watch;
-exports.start = gulp.series(html, watch);
+gulp.task('start', gulp.series('html', 'watch'));

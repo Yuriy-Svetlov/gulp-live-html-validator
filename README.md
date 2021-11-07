@@ -38,8 +38,9 @@ npm i gulp-live-html-validator --save-dev
 
 ##  Examples:
 
-* [gulp-live-html-validator examples](https://github.com/Yuriy-Svetlov/gulp-live-html-validator/tree/main/documentation/examples/1)
-* [useful examples for Gulp](https://github.com/Yuriy-Svetlov/live-html-validator/tree/main/documentation/examples/gulp)
+* [example-1](https://github.com/Yuriy-Svetlov/gulp-live-html-validator/tree/main/documentation/examples/1)
+* [example-2](https://github.com/Yuriy-Svetlov/gulp-live-html-validator/tree/main/documentation/examples/2)
+* [other useful examples for Gulp](https://github.com/Yuriy-Svetlov/live-html-validator/tree/main/documentation/examples/gulp)
 
 ##  API
 

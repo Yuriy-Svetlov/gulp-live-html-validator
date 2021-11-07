@@ -13,7 +13,7 @@ You may also want to use:
 ![Live HTML Validator](https://raw.githubusercontent.com/Yuriy-Svetlov/gulp-live-html-validator/main/images/main.png)
 
 
-Mane documentation are in [live-html-validator](https://github.com/Yuriy-Svetlov/live-html-validator)
+Main documentation are [live-html-validator](https://github.com/Yuriy-Svetlov/live-html-validator)
 
 ## Installs
 

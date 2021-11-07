@@ -45,25 +45,20 @@ const
     port: '8080'
   });
 
-const 
-  htmlWatch = 'src/**/*.html',
-  htmlSrc = ['src/**/*.html'],
-  htmlDest = './dest/';
-
 
 function html() {
-  return gulp.src(htmlSrc)    
+  return gulp.src('src/**/*.html')    
   .pipe(plumber())
   .pipe(htmlmin())
   .pipe(htmlValidatorMain.check())
-  .pipe(gulp.dest(htmlDest))
+  .pipe(gulp.dest('./dest/'))
 }
 
 
 function watch(){
   htmlValidatorMain.run();
 
-  gulp.watch(htmlWatch, gulp.series(html));
+  gulp.watch('src/**/*.html', gulp.series(html));
 }
 
 

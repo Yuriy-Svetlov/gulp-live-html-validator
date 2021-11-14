@@ -74,3 +74,7 @@ exports.watch = watch;
 ##  API
 
 * [https://github.com/Yuriy-Svetlov/live-html-validator](https://github.com/Yuriy-Svetlov/live-html-validator#api)
+
+###  Browser plugin API
+
+[API of browser plugin **Live HTML Validator**](https://live-html-validator.com/documentation)
